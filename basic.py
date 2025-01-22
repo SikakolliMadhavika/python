@@ -25,7 +25,7 @@ a='Madhavika'
 print(len(a))
 
 
-# length of str
+# type of str
 print(type(a))
 
 
@@ -35,26 +35,34 @@ print(a[0])
 print(a[3:7])
 
 
-# if else elif condition
-x=2
-if x>4:
-    print('x is greater than 4')
-elif x==2:
-    print('x is 2')
-else:
-    print('x is less than 4')
+#slicing with +ve and -ve indexing
+m='premiddam dude poyedemundi maha ithe tirigi premistaru'
+print(m[0:5])
+print(m[5:0:-1])
+print(len(m))
+print(m[-1:-54:-1])
+print(m[ : : -1])
+print(id(m))
+
+#represents same memory alloocation
+p='premiddam dude poyedemundi maha ithe tirigi premistaru'
+a='premiddam dude poyedemundi maha ithe tirigi premistaru'
+print(id(p))
+print(id(a))
 
 
-# for loop
-for x in range(2,5):
-    print('Hii')
+# p[5] = 's'   immutable
 
 
-# While loop
-i=3
-while i>4 :
-    print('Hello')
-    i+=1
+#complex
+b1= 3 + 5j
+b2 = 5 + 3j
+print(b1+b2)
+print(b1-b2)
+print(b1*b2)
+print(b1/b2) 
+print(b1**b2)
+# print(b1//b2) TypeError: unsupported operand type(s) for //: 'complex' and 'complex'
 
 
 
