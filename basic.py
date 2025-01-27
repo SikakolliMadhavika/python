@@ -136,59 +136,166 @@
 
 
 
-# Range
-m= [12, 24, 36]
-print(range(0,5))
+# # Range
+# m= [12, 24, 36]
+# print(range(0,5))
 
 
-print(list(range(0,5))) #typecasting into list
-print(tuple(range(0,5))) # typecasting into tuple
+# print(list(range(0,5))) #typecasting into list
+# print(tuple(range(0,5))) # typecasting into tuple
 
 
-for i in range(0,5):  # printing in line by line
-    print(i)
+# for i in range(0,5):  # printing in line by line
+#     print(i)
 
 
-for i in m:   #printing using list variable
-    print(i)
+# for i in m:   #printing using list variable
+#     print(i)
 
-for i in range(len(m)): #printing without using list variablr
-    print(m[i])
-
-
-# sets
-set1 = {1,4,5,5,6,9,0,1,5,3,5}
-print(set1)  #unordered   #prints repeated value only once
-
-list1= [1,1,1,2,2,3,4,5,5]
-print(list1)
-print(set(list1))
+# for i in range(len(m)): #printing without using list variablr
+#     print(m[i])
 
 
+# # sets
+# set1 = {1,4,5,5,6,9,0,1,5,3,5}
+# print(set1)  #unordered   #prints repeated value only once
 
-#NoneType
-
-num=None
-print(num)
-print(id(num))
-print(type(num))
-
-
-# input()
-num = input('Enter your fav num') 
-print(num) 
-numm = input('Enter another num') 
-print(num+numm) # output 515 due to default string data type
+# list1= [1,1,1,2,2,3,4,5,5]
+# print(list1)
+# print(set(list1))
 
 
-num1 = int(input('Enter your fav num'))
-numm1 = input('Enter another num')
-print(num1+numm1) # output TypeError: unsupported operand type(s) for +: 'int' and 'str'
+
+# #NoneType
+
+# num=None
+# print(num)
+# print(id(num))
+# print(type(num))
 
 
-num2 = int(input('Enter your fav num'))
-numm2 = int(input('Enter another num'))
-print(num2+numm2) # output 11
+# # input()
+# num = input('Enter your fav num') 
+# print(num) 
+# numm = input('Enter another num') 
+# print(num+numm) # output 515 due to default string data type
+
+
+# num1 = int(input('Enter your fav num'))
+# numm1 = input('Enter another num')
+# print(num1+numm1) # output TypeError: unsupported operand type(s) for +: 'int' and 'str'
+
+
+# num2 = int(input('Enter your fav num'))
+# numm2 = int(input('Enter another num'))
+# print(num2+numm2) # output 11
+
+
+
+
+#Conversions
+int1 = 10
+bool1 = True
+str1 = 'madhu'
+list1 = [1, 3.5, True, ['hi', 6]]
+tup1 = (1, 2)
+
+
+int1 = float(10)   # int to float
+print(int1)
+int1 = int(int1)   # float to int
+print(int1)
+
+
+print(int(bool1))   # bool to int
+print(bool(0))      # int to bool
+
+
+print(bool(str1))  #string to bool
+print(bool(''))
+print(str(bool1))   #bool to string
+
+
+# print(int(str1)) # Error string to int
+# print(int('25.5555'))  # string to int Error
+print(int('12'))   # string to int possible only when string is integer
+
+print(str(int1))    # int to string
+
+
+print(str(10.0))     # float to string
+
+print(float('25.555')) # string to float
+
+
+# print(int(3+5j)) #complex to int error
+print(complex(3))  # int to complex
+
+
+print(list(str1)) #string to list
+print(str(list1)) #list to string
+
+
+# print(list(12))   #int to list Error
+# print(tuple(12))   # int to tuple Error
+
+
+
+print(complex(2.134))   #float to complex
+# print(float(2+5j))   complex to float error
+
+
+print(bool(10.34567))  # float to bool
+print(float(True))       # bool to float
+
+
+
+# print(list(10.23456))   float to list error
+# print(float(list1))  list to float error
+
+
+# print(tuple(0.2345)) #float to tuple error
+# print(float(tup1)) #tuple to float error
+
+
+
+print(bool(3+4j)) #complex to bool
+print(complex(True)) # bool to complex
+
+
+print(str(2+4j)) #complex to string
+# print(complex('madhu'))  #string to complex error
+
+
+# print(list(3+4j)) #complex to list   error
+# print(complex(list1)) # list to complex  error
+
+
+
+# print(tuple(3+4j)) #complex to tuple error 
+# print(complex(tup1)) # tuple to complex error 
+
+
+# print(list(bool1))   # bool to list error
+print(bool(list1))      # list to bool
+
+
+# print(tuple(bool1))   # bool to tuple error 
+print(bool(tup1))      # tuple to bool
+
+
+
+print(tuple('madhu'))   # string to tuple error 
+print(str(tup1))      # tuple to string
+
+
+# print(int(1, 2))  # tuple to int error 
+
+
+
+print(tuple(list1))   # list to tuple  
+print(list(tup1))      # tuple to list
+
 
 
 
