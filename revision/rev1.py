@@ -1,7 +1,7 @@
 #declaration of different datatypes
 num1=10 #int
 num1=2.0 #float
-str="keerthi" #string
+str="madhavika" #string
 bool=True #boolean
 list1=["kerala","kochi","tamilnadu",] #list
 tup1=(1,2) #tuple
@@ -92,19 +92,19 @@ print(even_or_odd(22))
 text="keerthi"
 print(text[0:5])
 
-str1="naru"
-str2="keerthi"
+str1="madhu"
+str2="madhavika"
 print(str1+" "+str2)
 print(str1+str2)
 print(str1 *3)
 print(str1.strip())
 print(str1.lower())
 print(str1.upper())
-print(str2.replace("keerthi","sukeerthi"))
-print(str1.find("ar"))
+print(str2.replace("madhu","madhavika"))
+print(str1.find("av"))
 print(str1.split(",,"))
 
-str3=["rinku","20"]
+str3=["micky","20"]
 print(",,".join(str3))
 list=[1,2,3,4]
 list.append(5)
